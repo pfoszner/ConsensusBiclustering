@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>MTBA: Matlab Toolbox for Biclustering Analysis</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Matlab toolbox for biclustering analysis">
+    <meta name="author" content="Jayesh Kumar Gupta">
+
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+    <!-- add google analytics later -->
+  </head>
+
+  <body class="preview" id="top" data-spy="scroll" data-target=".subnav" data-offset="80">
+
+    <!-- Navbar
+         ================================================== -->
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="http://iiirs.org/IIL/">Intelligent Informatics Lab</a>
+          <div class="nav-collapse collapse" id="main-menu">
+            <ul class="nav" id="main-menu-left">
+              <li><a href="../people.html">People</a></li>
+              <li><a href="../publications.html">Publications</a></li>
+              <li><a href="../projects.html">Projects</a></li>
+              <li class="dropdown" id="preview-menu">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Download<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a target="_blank" href="./">MTBA</a></li>
+                  <li><a target="_blank" href="">Clustering</a></li>
+                </ul>
+              </li>
+              <!-- <li><a href="docs/index.html">Docs</a></li> -->
+            </ul>
+            
+              <ul id="main-menu-right" class="nav pull-right">
+                <li><a href="contact.php">Contact Us</a></li>
+                <li><form class="navbar-search" action="http://www.google.com/search" method="get">
+                    <input type="hidden" name="sitesearch" value="http://iiirs.org/IIL/" />
+                  <input name="q" type="text" class="search-query span2" placeholder="Search">
+                </form>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+      <!-- Masthead
+           ================================================== -->
+      <header class="jumbotron subhead text-center" id="overview">
+        <div class="row">
+          <div class="span12">
+            <br><br><br>
+            <h1>Intelligent Informatics Lab</h1>
+            <p class="lead">Indian Institute of Technology, Kanpur</p>
+          </div>
+        </div>
+      </header>
+
+      <!-- Hero Begin -->
+      <div class="hero-unit">
+        
+        <div class="row">
+          <div class="span5">
+            <div style="text-align:center;">
+                 <img src="../img/mtba.png" alt="MTBA logo" class="img-rounded">
+          </div>
+        </div>
+          
+        <div class="span5">
+          <h1>MTBA</h1>
+          <p class="lead">A Matlab Toolbox for Biclustering Analysis</p>
+          <p><strong>Developers:</strong> <small><a href="http://home.iitk.ac.in/~jayeshkg">Jayesh Kumar Gupta</a>, Sumanik Singh &amp <a href="http://home.iitk.ac.in/~nishchal/"> Nishchal K. Verma</a></small></p>
+          <p>
+            <div class="btn-group">
+              <button class="btn btn-primary btn-large">Download <i class="icon-download-alt icon-white"></i></button>
+              <button class="btn btn-primary btn-large dropdown-toggle" data-toggle="dropdown">
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <!-- dropdown menu links -->
+                <li><a target="_blank" href="download-win.php">Windows</a></li>
+                <li> <a target="_blank" href="download-nix.php">*nix</a></li>
+              </ul>
+            </div>
+            <a class="btn btn-primary btn-large" href="tutorial.html">
+              Get started
+              <i class="icon-road icon-white"></i>
+            </a>
+            
+          </p>
+        </div>
+        </div>
+      </div>
+      <br>
+      
+      <div class="row">
+
+        <div class="span6">
+          <div class="well">
+            <h3>About</h3>
+            <p>Biclustering is a popular approach to analyze patterns in a dataset, especially those of biological origin such as gene expression data. Biclustering performs  better than  classical clustering techniques under certain data sets, since it can simultaneously cluster both rows and columns of the matrix unlike the latter. As a result, submatrices exhibiting unique patterns can be revealed helping us to better understand the relationship between row and column variables. </p>
+            
+            <p>We introduce a new Matlab toolbox designed to perform a variety of biclustering algorithms under a common user interface. Although some implementations are available for the proposed biclustering algorithms, each program is accompanied by a different 
+            user interface and use different input-output formats. MTBA tries to fill this gap by providing multiple functionalities for data handling, preprocessing, biclustering and visualization. </p>
+          </div>
+        </div>
+
+        <div class="span6">
+          <div class="well">
+            <h3>Key Features</h3>
+            <h4>Algorithms:</h4>
+          <ul>
+            <li>Cheng and Church</li>
+            <li>Bipartite Spectral Graph Partitioning</li>
+            <li>OPSM</li>
+            <li>Iterative Signature (ISA)</li>
+            <li>Spectral Biclustering</li>
+            <li>Information Theoretic Learning (ITL)</li>
+            <li>xMOTIF</li>
+            <li>Plaid</li>
+            <li>FLOC</li>
+            <li>BiMax</li>
+            <li>Bayesian Biclustering</li>
+            <li>LAS</li>
+			<li>Qubic</li>
+			<li>Fabia</li>
+          </ul>
+          </div>
+        </div>
+        
+      </div>
+
+      <div class="span6 offset3">
+        <h3 id="cite">How to cite?</h3>
+        <p>Please cite the following paper:</p>
+
+        The bibtex format is:
+        <pre>
+        </pre>
+      </div>
+  
+      <div class="row">
+        <div class="span8">
+          <h3>Acknowledgments</h3>
+          We would like to thank all members of Intelligent Informatics Group at IIT-K for valuable discussions and suggestions. We are also grate-
+          ful to Andrey Shabalin for graciously releasing the LAS code under LGPL and allowing us to port it to our toolbox. 
+
+        </div>
+
+        <div class="span4">
+          <h3>License</h3>
+          <p><a href="./license.html">MIT Licence</a> (<a href="http://en.wikipedia.org/wiki/MIT_License">More information</a>)</p>
+          <p>Pull requests are welcome in the <a href="https://bitbucket.org/rejuvyesh/matlab-toolbox-for-biclustering-analysis">bitbucket repository</a>.</p>
+        </div>
+      </div>
+       
+
+      <!-- Footer
+           ================================================== -->
+      <hr>
+
+      <footer id="footer">
+        <p class="pull-right"><a href="#top">Back to top</a></p>
+        <p>
+          (c) Intelligent Informatics Lab<br/>
+        Web fonts from <a href="http://www.google.com/webfonts">Google</a>. </p>
+      </footer>
+    </div><!-- /container -->
+      
+
+
+<!-- Le javascript
+     ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="../js/jquery.smooth-scroll.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootswatch.js"></script>
+
+
+</body>
+</html>

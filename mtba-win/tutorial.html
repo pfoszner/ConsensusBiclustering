@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>MTBA: Matlab Toolbox for Biclustering Analysis</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Matlab toolbox for biclustering analysis">
+    <meta name="author" content="Jayesh Kumar Gupta">
+
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="../css/prettify.css" type="text/css" rel="stylesheet">
+    <link href="../css/lang-matlab.css" type="text/css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+    <!-- add google analytics later -->
+  </head>
+
+  <body onload="prettyPrint()" id="top" data-spy="scroll" data-target=".sidebar" >
+
+    <!-- Navbar
+         ================================================== -->
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="http://iiirs.org/IIL/">Intelligent Informatics Lab</a>
+          <div class="nav-collapse collapse" id="main-menu">
+            <ul class="nav" id="main-menu-left">
+              <li><a href="../people.html">People</a></li>
+              <li><a href="../publications.html">Publications</a></li>
+              <li><a href="../projects.html">Projects</a></li>
+              <li class="dropdown" id="preview-menu">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Downloads<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a  href="./index.html">MTBA</a></li>
+                  <li><a  href="">Clustering</a></li>
+                </ul>
+              </li>
+              <!-- <li><a href="docs/index.html">Docs</a></li> -->
+            </ul>
+            <ul id="main-menu-right" class="nav pull-right">
+              <li><a href="./contact.php">Contact Us</a></li>
+              <li><form class="navbar-search pull-right" action="http://www.google.com/search" method="get">
+                  <input type="hidden" name="sitesearch" value="http://iiirs.org/IIL/" />
+                  <input name="q" type="text" class="search-query span2" placeholder="Search">
+                </form>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <br><br><br>
+      <div class="row">
+        <div class="span3 sidebar">
+          <!--Sidebar content-->
+          <!-- class="nav nav-tabs nav-stacked mysidebar" -->
+          <ul class="nav nav-list" data-spy="affix">
+            <li class="nav-header">Tutorial</li>
+            <li><a href="#gettingstarted">Getting started</a></li>
+            <li><a href="#example">Example</a></li>
+            <li><a href="#tools">Helpful tools</a></li>
+            <li><a href="#reference">Reference</a></li>
+          </ul>
+        </div>
+        <div class="span9">
+          <!--Body content-->
+          <section id="gettingstarted">
+            <div class="page-header">
+              <h1>Getting started with MTBA<br>
+              </h1>
+            </div>
+            <h3>Foreword</h3>
+            <p><strong>With MTBA, you can </strong> using state-of-the-art algorithms, with
+              minimal effort. The toolbox targets great flexibility in the
+              problem description and comes with advanced features.</p>
+            <p>It is also work in progress: <strong>
+                feedback and contributions are welcome</strong>!<br>
+            </p>
+            <h3>Download</h3>
+            <p>
+              <div class="btn-group">
+                <button class="btn btn-primary">Download <i class="icon-download-alt icon-white"></i></button>
+                <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <!-- dropdown menu links -->
+                  <li><a href="download-win.php">Windows</a></li>
+                 <li> <a href="download-nix.php">*nix</a></li>
+                </ul>
+              </div>
+              <!-- <a class="btn btn-primary" href="download.html">Download </i></a> -->
+
+
+              &nbsp;&nbsp;
+              The current version is <code>0.1</code> and was packaged on August 18, 2013.
+              The file is less than Mb.</p>
+            <!-- <p>Previous versions:</p> -->
+            <h3>Install</h3>
+            <blockquote>
+              <ol>
+                <li>Unzip and copy the whole <tt>mtba</tt> directory you just
+                  downloaded in a location of your choice on disk, say, in <tt>/my/directory/</tt>.</li>
+                <li>Add <tt>/my/directory/mtba/</tt> to the Matlab path,
+                  either by typing <code>addpath('/my/directory/mtba/')</code>
+                  at the command prompt, or through the menu <tt>File » Set
+                    Path... » Add Folder...</tt>. Save the path if you would
+                  like Matlab to remember this.<br>
+                </li>
+              </ol>
+            </blockquote>
+          </section>
+
+          <section id="example">
+            <div class="page-header">
+              <h1>Example</h1>
+            </div>
+            <p>The easiest way to use MTBA is to call the <code>biclust</code> function, with the two-dimensional data matrix and the method name:</p>
+            <pre class="prettyprint lang-matlab">
+data = load('yeast.dat'); % load matrix
+result = biclust(data, 'cc'); % apply Cheng & Church Algorithm with default parameters</pre>
+          </section>
+
+          <section id="tools">
+            <div class="page-header">
+              <h1>Helpful tools</h1>
+            </div>
+          </section>
+          
+          <section id="reference">
+            <div class="page-header">
+              <h1>Reference</h1>
+            </div>
+            <p><a target="_blank" href="reference/index.html">A reference is
+                available here</a>, to help navigating the source code of the
+              toolbox. It was generated with <a href="http://www.artefact.tk/software/matlab/m2html/">m2html</a>.<br>
+            </p>
+          </section>
+        </div>
+      </div>
+
+
+    <!-- Footer
+         ================================================== -->
+    <hr>
+
+    <footer id="footer">
+      <p class="pull-right"><a href="#top">Back to top</a></p>
+
+      (c) Intelligent Informatics Lab<br/>
+      Web fonts from <a href="http://www.google.com/webfonts">Google</a>. 
+    </footer>
+    </div><!-- /container -->
+
+
+
+
+    <!-- Le javascript
+         ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="../js/jquery.smooth-scroll.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/bootswatch.js"></script>
+    <script src="../js/prettify.js"></script>
+    <script src="../js/lang-matlab.js"></script>
+    
+  </body>
+</html>

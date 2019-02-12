@@ -1,0 +1,7 @@
+* TODO Complete SAMBA Algorithm
+
+* TODO Write a wrapper class
+
+* TODO Complete Documentation
+* TODO Check for compatibility with octave  
+* TODO Write compile script  
